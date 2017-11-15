@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Decorator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="403" Width="322.322">
     <Grid>
-        
+        <TextBox Name="Tb1" HorizontalAlignment="Left" Height="23" Margin="65,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
+        <CheckBox Name="Chb1" Checked="CheckBox_Checked" Content="Сыр(50)" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Chb2" Checked="CheckBox_Checked_1"  Content="Грибы(70)" HorizontalAlignment="Left" Margin="78,81,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Chb3" Checked="CheckBox_Checked_2" Content="Овощи(60)" HorizontalAlignment="Left" Margin="157,81,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Chb4" Checked="CheckBox_Checked_3"  Content="Соус(50)" HorizontalAlignment="Left" Margin="240,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,2.033"/>
+        <GroupBox Header="Хлеб" HorizontalAlignment="Left" Height="43" Margin="10,33,0,0" VerticalAlignment="Top" Width="294">
+            <Grid>
+                <RadioButton Name="WBread" Checked="RadioButton_Checked" Content="Белый(100)" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True" Margin="26,0,0,0"/>
+                <RadioButton Name="BBread" Checked="RadioButton_Checked_1" Content="Черный(110)" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+        </GroupBox>
+        <Label Content="Цена - " HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"/>
+        <Button Content="Посчитать Сумму" HorizontalAlignment="Left" Margin="97,117,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click" Height="20"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Button_Click_1"/>
+
     </Grid>
 </Window>
